@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Route, Routes} from "react-router-dom";
+import Profile from "./nav/profile/Profile";
+import Table from "./nav/table/Table";
+import Journal from "./nav/journal/Journal";
+import Students from "./nav/students/Students";
+import Layout from "./layout/Layout";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Routes>
+                    <Route path={'/'} element={<Layout/>}>
+                        <Route path={'/profile'} element={<Profile/>}/>
+                        <Route path={'/table'} element={<Table/>}/>
+                        <Route path={'/journal'} element={<Journal/>}/>
+                        <Route path={'/students'} element={<Students/>}/>
+                    </Route>
+            </Routes>
+
+
+        </div>
+    );
 }
 
 export default App;

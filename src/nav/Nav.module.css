@@ -1,0 +1,21 @@
+.navBlock{
+    width: 95%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav {
+    border: 1px solid;
+    width: 300px;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+.navProfile {
+    border: 1px solid;
+    width: 100px;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+}
