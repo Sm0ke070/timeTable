@@ -16,7 +16,7 @@ const Student = (props: StudentPropsType) => {
                 <p>Имя: {firstName} </p>
                 <p>Фамилия: {lastName}</p>
                 <p>Возраст: {age} </p>
-                <p>Класс: {grade} {}</p>
+                <p>Класс: {grade}</p>
             </div>
         </div>
     );
