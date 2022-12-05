@@ -18,13 +18,12 @@ const Layout = () => {
                     <Link to="/students">Учащиеся</Link>
                 </div>
             </Header>
+
             <div className={styles.mainBlock}>
+
                 <Outlet/>
             </div>
-
-
         </>
-
     );
 };
 

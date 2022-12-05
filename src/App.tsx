@@ -8,8 +8,9 @@ import Students from "./nav/students/Students";
 import Layout from "./layout/Layout";
 
 
-function App() {
+function App(props:any) {
     return (
+
         <div className="App">
             <Routes>
                     <Route path={'/'} element={<Layout/>}>
@@ -19,10 +20,7 @@ function App() {
                         <Route path={'/students'} element={<Students/>}/>
                     </Route>
             </Routes>
-
-
         </div>
     );
 }
-
 export default App;

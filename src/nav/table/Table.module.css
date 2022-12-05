@@ -1,0 +1,19 @@
+.btnBlock {
+
+}
+
+.btnContainer {
+    background-color: #a7a7a7;
+
+
+}
+
+.btn {
+    background-color: #e5ffcf;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+
+}
+
